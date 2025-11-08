@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.tonial.calculaimc.util.calcularIMC
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
@@ -70,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         val locale:String = Locale.getDefault().language //linguagem do dispositivo
         //val contryCode:String = Locale.getDefault().country //pais do dispositivo
 
-        val resultado: Double =  calcularIMC(pesoVal, alturaVal, locale)
+        val resultado: Double = calcularIMC(pesoVal, alturaVal, locale)
         //val resultado = (pesoVal / (alturaVal * alturaVal))
 
         val nf: NumberFormat = NumberFormat.getNumberInstance(Locale.getDefault())
@@ -80,17 +81,6 @@ class MainActivity : AppCompatActivity() {
 
         total.text = nf.format(resultado).toString()
 
-    }
-
-    private fun calcularIMC(pesoVal: Double, alturaVal: Double, locale: String): Double {
-        if(locale.equals("pt"))
-        {
-            return pesoVal / (alturaVal * alturaVal)
-        }
-        else
-        {
-            return 703 * (pesoVal / (alturaVal * alturaVal))
-        }
     }
 
     private fun btnLimparOnClick() {

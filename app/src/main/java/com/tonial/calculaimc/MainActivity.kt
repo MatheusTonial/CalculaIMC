@@ -50,10 +50,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun init(){
         //var peso: EditText = findViewById(R.id.peso) declarar direto dentro
-        peso = findViewById(R.id.peso);
-        altura = findViewById(R.id.altura);
+        peso = findViewById(R.id.etPeso);
+        altura = findViewById(R.id.etAltura);
 
-        total = findViewById(R.id.total);
+        total = findViewById(R.id.tvTotal);
         btnCalcular = findViewById(R.id.btnCalcular);
         btnLimpar = findViewById(R.id.btnLimpar);
     }

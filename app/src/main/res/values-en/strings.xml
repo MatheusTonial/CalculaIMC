@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="peso">Weight:</string>
+    <string name="peso_hint">Weight in pounds</string>
+    <string name="peso_valid">Weight must be informed a value greater than zero</string>
+
+    <string name="altura">Height:</string>
+    <string name="altura_hint">Height in inches</string>
+    <string name="altura_valid">Height must be informed a value greater than zero</string>
+
+    <string name="resultado">Result:</string>
+    <string name="total">0.0</string>
+    <string name="calcular">Calculate</string>
+    <string name="limpar">Clean</string>
+    <string name="limpar_longClick">Button to clean the result</string>
+</resources>

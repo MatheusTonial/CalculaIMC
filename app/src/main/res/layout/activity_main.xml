@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Peso:"
+        android:text="@string/peso"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,19 +20,20 @@
         android:id="@+id/etPeso"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Peso em Kg"
+        android:importantForAutofill="no"
+        android:hint="@string/peso_hint"
         android:inputType="numberDecimal"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvPeso"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/tvPeso" />
 
     <TextView
         android:id="@+id/tvAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Altura:"
+        android:text="@string/altura"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvPeso" />
 
@@ -40,18 +41,19 @@
         android:id="@+id/etAltura"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Altura em m"
+        android:importantForAutofill="no"
+        android:hint="@string/altura_hint"
         android:inputType="numberDecimal"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tvAltura"
-        app:layout_constraintTop_toBottomOf="@id/etPeso" />
+        app:layout_constraintTop_toTopOf="@id/tvAltura" />
 
     <TextView
         android:id="@+id/tvResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Resultado:"
+        android:hint="@string/resultado"
         android:padding="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
@@ -62,28 +64,29 @@
         android:id="@+id/tvTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="0,0"
+        android:hint="@string/total"
         android:padding="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/tvResultado"
-        app:layout_constraintTop_toBottomOf="@+id/etAltura" />
+        app:layout_constraintTop_toTopOf="@+id/tvResultado" />
 
     <Button
         android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Calcular"
-        app:layout_constraintStart_toStartOf="@id/tvTotal"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toStartOf="@id/tvTotal"
         app:layout_constraintTop_toBottomOf="@id/tvTotal" />
 
     <Button
         android:id="@+id/btnLimpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:padding="16dp"
-        android:text="Limpar"
+        android:text="@string/limpar"
         app:layout_constraintStart_toEndOf="@id/btnCalcular"
         app:layout_constraintTop_toTopOf="@id/btnCalcular" />
 
